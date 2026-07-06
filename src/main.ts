@@ -1,3 +1,5 @@
+//Snack 1
+
 // Hai ricevuto un dato generico da un'API, ma non sai di che tipo sia… Il tuo compito è controllare il tipo del dato e stampare il valore in modo corretto.
 
 // Se è una stringa: stampala in maiuscolo
@@ -21,3 +23,23 @@ if (typeof data === 'string') {
 } else {
   console.log('Tipo non supportato');
 }
+
+//Snack 2
+
+// Crea un type alias Dipendente che rappresenta un lavoratore con i seguenti dati:
+
+// nome → stringa
+// cognome → stringa
+// annoNascita → numero
+// sesso → Può essere solo "m" o "f".
+// anniDiServizio (array di numeri, es. [2014, 2015, 2017, 2018])
+
+import { Dipendente } from './types';
+
+const dipendente: Dipendente = {
+  nome: 'Mario',
+  cognome: 'Rossi',
+  annoNascita: 1998,
+  sesso: 'm',
+  anniDiServizio: [2015, 2016],
+};
